@@ -1,0 +1,27 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0     33 12/07/2022 11:24:40:086 BRT 12/07/2022 11:54:59:667 BRT java.lang.NoClassDefFoundError com.ibm.ws.injectionengine.InjectionProcessorManager.getAllDeclaredFields 249
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.26.49.0.log
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.24.40.0.log
+     1      3 12/07/2022 11:29:42:058 BRT 12/07/2022 11:38:52:649 BRT com.ibm.wsspi.injectionengine.InjectionException com.ibm.ws.webcontainer.servlet.ServletWrapper.loadServlet 228
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.29.42.0.log
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.35.43.2.log
+     2      3 12/07/2022 11:29:42:334 BRT 12/07/2022 11:38:52:650 BRT javax.servlet.UnavailableException com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest() 302
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.29.42.1.log
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.35.43.3.log
+     3      1 12/07/2022 11:33:05:366 BRT 12/07/2022 11:33:05:366 BRT java.lang.ArrayIndexOutOfBoundsException com.ibm.ws.annocache.info.internal.InfoStoreImpl 254
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.33.05.0.log
+     4      1 12/07/2022 11:33:05:603 BRT 12/07/2022 11:33:05:603 BRT com.ibm.wsspi.annocache.info.InfoStoreException com.ibm.ws.annocache.info.internal.ClassInfoCacheImpl 271
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.33.05.1.log
+     5      2 12/07/2022 11:35:43:301 BRT 12/07/2022 11:38:52:642 BRT java.security.PrivilegedActionException com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory 474
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.35.43.0.log
+     6      2 12/07/2022 11:35:43:314 BRT 12/07/2022 11:38:52:642 BRT java.lang.reflect.InvocationTargetException com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject 408
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.35.43.1.log
+     7     15 12/07/2022 11:49:13:914 BRT 12/07/2022 11:54:34:332 BRT java.lang.NoClassDefFoundError com.ibm.wsspi.injectionengine.MethodMap.getAllDeclaredMethods 106
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.49.13.0.log
+     8      6 12/07/2022 11:50:18:162 BRT 12/07/2022 11:53:06:741 BRT java.lang.Error com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.50.18.0.log
+     9      6 12/07/2022 11:50:18:538 BRT 12/07/2022 11:53:06:767 BRT javax.servlet.ServletException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064
+                                                                            - C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\logs\ffdc\ffdc_22.07.12_11.50.18.1.log
+------+------+---------------------------+---------------------------+---------------------------

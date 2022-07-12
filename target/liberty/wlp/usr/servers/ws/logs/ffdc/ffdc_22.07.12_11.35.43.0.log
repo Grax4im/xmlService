@@ -1,0 +1,156 @@
+------Start of DE processing------ = [12/07/2022 11:35:43:303 BRT]
+Exception = java.security.PrivilegedActionException
+Source = com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory
+probeid = 474
+Stack Dump = java.security.PrivilegedActionException: java.lang.reflect.InvocationTargetException
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory.getServiceInstance(ServiceRefObjectFactory.java:467)
+	at com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory.getInstance(ServiceRefObjectFactory.java:307)
+	at com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory.getObjectInstance(ServiceRefObjectFactory.java:279)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObjectInstance(InjectionBinding.java:1558)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1434)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1374)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:104)
+	at com.ibm.ws.managedobject.internal.ManagedObjectImpl.inject(ManagedObjectImpl.java:96)
+	at com.ibm.ws.managedobject.internal.ManagedObjectImpl.inject(ManagedObjectImpl.java:87)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.inject(WebApp.java:1278)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.injectAndPostConstruct(WebApp.java:1419)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.injectAndPostConstruct(WebApp.java:1407)
+	at com.ibm.ws.webcontainer.osgi.servlet.ServletWrapper.createTarget(ServletWrapper.java:63)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper$1.run(ServletWrapper.java:1543)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadServlet(ServletWrapper.java:1511)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:590)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:443)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1227)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5059)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:316)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:281)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1184)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:453)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:412)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:566)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:500)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:360)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:327)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:514)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:584)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:968)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1057)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:245)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedConstructorAccessor916.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory$4.run(ServiceRefObjectFactory.java:471)
+	... 41 more
+Caused by: javax.xml.ws.WebServiceException: org.apache.cxf.service.factory.ServiceConstructionException: Failed to create service.
+	at org.apache.cxf.jaxws.ServiceImpl.<init>(ServiceImpl.java:150)
+	at com.ibm.ws.jaxws.client.LibertyServiceImpl.<init>(LibertyServiceImpl.java:88)
+	at com.ibm.ws.jaxws.client.LibertyProviderImpl$1.run(LibertyProviderImpl.java:91)
+	at com.ibm.ws.jaxws.client.LibertyProviderImpl$1.run(LibertyProviderImpl.java:88)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.ws.jaxws.client.LibertyProviderImpl.createServiceDelegate(LibertyProviderImpl.java:88)
+	at javax.xml.ws.Service.<init>(Service.java:57)
+	at main.java.com.example.demo.Big_Service.<init>(Big_Service.java:58)
+	... 44 more
+Caused by: org.apache.cxf.service.factory.ServiceConstructionException: Failed to create service.
+	at org.apache.cxf.wsdl11.WSDLServiceFactory.<init>(WSDLServiceFactory.java:100)
+	at org.apache.cxf.jaxws.ServiceImpl.initializePorts(ServiceImpl.java:214)
+	at org.apache.cxf.jaxws.ServiceImpl.<init>(ServiceImpl.java:148)
+	... 51 more
+Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:/Users/robert/Desktop/novosExercicios/demo/service-a/target/liberty/wlp/usr/servers/ws/localhost:9080%3FBig%3Fwsdl'.: java.io.FileNotFoundException: C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\localhost:9080?Big?wsdl (O sistema não pode encontrar o arquivo especificado)
+	at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2255)
+	at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2447)
+	at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2481)
+	at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:251)
+	at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:194)
+	at org.apache.cxf.wsdl11.WSDLServiceFactory.<init>(WSDLServiceFactory.java:98)
+	... 53 more
+Caused by: java.io.FileNotFoundException: C:\Users\robert\Desktop\novosExercicios\demo\service-a\target\liberty\wlp\usr\servers\ws\localhost:9080?Big?wsdl (O sistema não pode encontrar o arquivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2245)
+	... 58 more
+
+Dump of callerThis
+Object type = com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory
+
+==> Performing default dump from com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Tue Jul 12 11:35:43 BRT 2022
+ = *** Start InjectionDiagnosticModule Dump ***
+ = > InjectionDiagnosticModule: dump Object array : 2
+ = 
+ =    Non-Formattable :
+ =       > com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory$TransientWebServiceRefInfo@3a93ad35
+ =            com.ibm.ws.jaxws.client.injection.ServiceRefObjectFactory$TransientWebServiceRefInfo@3a93ad35
+ =       > com.ibm.ws.jaxws.metadata.WebServiceRefInfo@6d912193
+ =            *** Begin WebServiceRefInfo: com.ibm.ws.jaxws.metadata.WebServiceRefInfo@6d912193 ***
+JNDI name                       : main.java.com.example.demo.UI/service
+Mapped name                     : 
+Lookup name                     : 
+WSDL location                   : localhost:9080?Big?wsdl
+WSDL service                    : {http://demo.example.com.java.main/}Big
+Service-Interface classname     : main.java.com.example.demo.Big_Service
+Service-Ref-Type classname      : main.java.com.example.demo.Big_Service
+Port QName                      : <null>
+handlerChain file location: <null>
+handlers is From XML: false
+HandlerChain declaring classname: null
+HandlerChains: []
+PartialInfo: ServiceRefPartialInfo {key= main.java.com.example.demo.Big_Service, wsdlLocation= http://localhost:9080/Big?wsdl, serviceQName= {http://demo.example.com.java.main/}Big, portQName= null
+*** End WebServiceRefInfo ***
+
+ = < InjectionDiagnosticModule: dump Object array complete
+ = 
+ = *** Start InjectionEngine Dump    ---> com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl@13060f4e
+ = 
+ =    Default Factories : 
+ =       Indirect    = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@4bf14b19
+ =       ResIndirect = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@427469c2
+ =       ResRef      = com.ibm.ws.injectionengine.osgi.internal.ResRefReferenceFactoryImpl@19b1b63f
+ =       ResAuto     = com.ibm.ws.injectionengine.osgi.internal.ResAutoLinkReferenceFactoryImpl@3a6ea638
+ =       EJBLink     = com.ibm.ws.injectionengine.osgi.internal.EJBLinkReferenceFactoryImpl@7b068bef
+ =       MBLink      = com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@1a5dd734
+ = 
+ =    Actual Factories : 
+ =       com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@1a5dd734
+ = 
+ =    Registered Processors : 
+ =       javax.annotation.Resource : com.ibm.ws.injectionengine.processor.ResourceProcessorProvider@e498a0e
+ =       javax.annotation.sql.DataSourceDefinition : com.ibm.ws.injectionengine.processor.DataSourceDefinitionProcessorProvider@4159a299
+ =       javax.xml.ws.WebServiceRef : com.ibm.ws.jaxws.client.injection.WebServiceRefProcessorProvider@ecf10ae
+ = 
+ =    Registered Object Factories : 
+ = 
+ =    Registered No-Override Object Factories : 
+ =       javax.annotation.Resource
+ =          javax.xml.ws.WebServiceContext : com.ibm.ws.jaxws.injection.WebServiceContextObjectFactoryInfo@7a5f8234
+ = 
+ =    Registered Override Reference Factories : 
+ = 
+ =    Registered MetaDataListeners : 
+ =       com.ibm.ws.jaxws.support.JaxWsInjectionMetaDataListener@38846e8b
+ = 
+ =    isEmbeddable    : false
+ = 
+ = *** InjectionEngine Dump Complete ***
+ = 
+ = *** InjectionDiagnosticModule Dump Complete ***
++ Data for directive [Default] obtained. = 
+==> Dump complete for com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Tue Jul 12 11:35:43 BRT 2022

@@ -1,0 +1,24 @@
+#Tue Jun 21 00:15:44 BST 2022
+lib/com.ibm.ws.org.eclipse.equinox.coordinator_1.0.66.jar=1e7be4fecfa7352daec3eaab1b373c5f
+lib/com.ibm.ws.config_1.0.66.jar=5e1d7c32296287630374dc16ccbaf8ff
+lib/com.ibm.ws.org.objectweb.asm_1.0.66.jar=e410b9f143bb851a8ee09d960b9511fc
+lib/com.ibm.ws.event_1.0.66.jar=9cb877eaf818b69c1fde070f66e24e94
+lib/com.ibm.ws.org.apache.aries.jmx.api_1.0.66.jar=97658342ba1f51c1b2a99f0f6687afa1
+lib/com.ibm.ws.kernel.equinox.module_1.0.66.jar=f40825fc9caf34bc651ca591980e9080
+lib/org.eclipse.osgi_3.17.200.jar=4a59e8b63372aed0681303490170bae5
+lib/com.ibm.ws.kernel.service_1.3.66.jar=fca1ee057284480f2428e502eaff481c
+lib/com.ibm.ws.org.apache.felix.scr_1.0.66.jar=e6d8d42478c1a34a134404973d162a10
+lib/com.ibm.ws.crypto.passwordutil_1.0.66.jar=1351805f248c139386f3a8bb701c37cd
+lib/com.ibm.ws.org.jboss.jandex_1.0.66.jar=142a7ba8528baa86fdf095cc8c29faa1
+lib/com.ibm.ws.diagnostics_1.0.66.jar=e8e46a807191543c21c8ff9e33f57ea1
+lib/com.ibm.ws.kernel.feature_1.0.66.jar=8df64ad35825952da2eb3c8d409990e0
+lib/com.ibm.ws.kernel.metatype.helper_1.0.66.jar=986e1de4f4302ec0f6bf13ca366a6c9d
+lib/com.ibm.ws.org.eclipse.equinox.metatype_1.0.66.jar=17f37af39ad763811a0ed18bfd21e8e9
+lib/com.ibm.ws.runtime.update_1.0.66.jar=c03f3a6a7d6cd1e698f52983b846ef60
+lib/com.ibm.ws.org.apache.aries.jmx.core.whiteboard_1.0.66.jar=318d0e0bcbbb1228e1d9b1b46cb6a613
+lib/com.ibm.ws.org.eclipse.equinox.region_1.0.66.jar=10c5a1232736f9dec2d15f895c9299ad
+lib/com.ibm.ws.threading_1.1.66.jar=9d5fb115ba1e20a7f8d556db496ee008
+lib/platform/kernelCore-1.0.mf=e6a033cd53ff98099c1d7e0a427ad612
+lib/com.ibm.ws.jmx_1.0.66.jar=188852f09332366b9e1153e870b93b6c
+lib/com.ibm.ws.kernel.filemonitor_1.0.66.jar=275438093c50423288eb69fc4e3d8d11
+lib/com.ibm.ws.org.apache.aries.util_1.0.66.jar=2b1e8a783526541e08c648f77679e78b
